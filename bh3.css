@@ -1,0 +1,191 @@
+
+
+
+
+.header {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1% 5%;
+  }
+  
+  .header nav h2 {
+    color: rgb(95, 164, 242);
+  }
+  
+  .header nav h2 span {
+    color: #3678f4;
+  }
+  
+  @media (max-width: 768px) {
+    .header nav h2 {
+      margin: auto;
+    }
+  }
+  
+  .header nav #navLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .header nav #navLinks a {
+    text-decoration: none;
+    color: rgb(88, 192, 240);
+    font-size: 1.2rem;
+    padding: .5rem .75rem;
+  }
+  
+  .header nav #navLinks a::after {
+    display: block;
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: #31d2f2;
+    margin: auto;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  
+  .header nav #navLinks a:hover::after {
+    width: 100%;
+  }
+  .header nav .fa-bars,
+  .header nav .fa-xmark {
+    color: antiquewhite;
+    padding: 0.5rem 0.75rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .header nav .fa-bars,
+    .header nav .fa-xmark {
+      display: block;
+    }
+  }
+  #campus .head1{
+    position: relative ;
+    top:-40%;
+    animation-name:test2;
+    animation-duration:2s;
+    animation-delay:0.1s;
+    animation-timing-function:ease;
+    animation-fill-mode:forwards;
+}
+@keyframes test2{
+    from
+    {
+        top :-40vh;
+    }
+    to
+    {
+       top:0vh;
+    }
+}
+  #campus {
+    position :relative;
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+  }
+  
+  #campus h1 {
+    font-size: 2rem;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  #campus p {
+    color: #777;
+    font-size: .9rem;
+    line-height: 1.5rem;
+    padding: 0.7rem;
+  }
+  
+  #campus .row {
+    position: absolute ;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 3%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  @media (max-width: 768px) {
+    #campus .row {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+  }
+  
+  #campus .row .col {
+    -ms-flex-preferred-size: 31%;
+        flex-basis: 31%;
+    border-radius: 0.8rem;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #campus .row .col img {
+    width: 100%;
+    display: block;
+  }
+  
+  #campus .row .col .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  
+  #campus .row .col .layer h3 {
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    width: 100%;
+    color: rgb(251, 88, 62);
+    font-size: 1.5rem;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  
+  #campus .row .col .layer:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+  #campus .row .col .layer:hover h3 {
+    bottom: 50%;
+    opacity: 1;
+    font-size: 3.5rem;
+  }

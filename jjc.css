@@ -1,0 +1,179 @@
+#testimonials {
+    width: 100%;
+    margin: 2rem auto;
+    text-align: center;
+
+  }
+  
+  #testimonials h1 {
+    font-size: 3rem;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  
+  #testimonials p {
+    color: #777;
+    font-size: .9rem;
+    line-height: 1.5rem;
+    padding: 0.7rem;
+  }
+  #testimonials .t1 p{
+    color: rgb(36, 149, 255);
+    font-size: 2rem;
+    line-height: 1.5rem;
+    padding: 0.7rem;
+  }
+  #testimonials .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 3%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  @media (max-width: 768px) {
+    #testimonials .row {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+  }
+  
+  #testimonials .row .col {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    border-radius: 0.8rem;
+    margin-bottom: 2rem;
+    text-align: left;
+    background-color: #fff3f3;
+    padding: 1.5rem;
+    cursor: pointer;
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: .2s;
+    transition: .2s;
+    margin-left: 42px;
+    margin-right: 42px;
+  }
+  #testimonials .row .col h3{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  #testimonials .row .col span{
+    color: #2087fd;
+  }
+  
+  #testimonials .row .col:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  
+  #testimonials .row .col p {
+    padding: 0;
+  }
+  
+  #testimonials .row .col h3 {
+    margin-top: 1rem;
+  }
+  
+  #testimonials .row .col .fa-solid,
+  #testimonials .row .col .fa-regular {
+    color: #f44336;
+  }
+  .header {
+    height: 100vh;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.5))), url(images/13.jpeg);
+    background-image: linear-gradient(rgba(46, 46, 46, 0.8), rgba(49, 49, 49, 0.5)), url(images/13.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1% 5%;
+  }
+  
+  .header nav h2 {
+    color: rgb(95, 164, 242);
+  }
+  
+  .header nav h2 span {
+    color: #3678f4;
+  }
+  
+  @media (max-width: 768px) {
+    .header nav h2 {
+      margin: auto;
+    }
+  }
+  
+  .header nav #navLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .header nav #navLinks a {
+    text-decoration: none;
+    color: rgb(88, 192, 240);
+    font-size: 1.2rem;
+    padding: .5rem .75rem;
+  }
+  
+  .header nav #navLinks a::after {
+    display: block;
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: #31d2f2;
+    margin: auto;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  
+  .header nav #navLinks a:hover::after {
+    width: 100%;
+  }
+  .header nav .fa-bars,
+  .header nav .fa-xmark {
+    color: antiquewhite;
+    padding: 0.5rem 0.75rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .header nav .fa-bars,
+    .header nav .fa-xmark {
+      display: block;
+    }
+  }
